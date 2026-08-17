@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alfonso Isaac — creador de contenido. Encuentra aquí mis redes oficiales, TikTok e Instagram." />
+  <meta name="author" content="Alfonso Isaac" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="Alfonso Isaac | Creador de contenido" />
+  <meta property="og:description" content="Redes oficiales de Alfonso Isaac." />
+  <meta property="og:type" content="website" />
+
+  <title>Alfonso Isaac | Creador de contenido</title>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alfonso Isaac",
+    "alternateName": "alfonsoisaac_",
+    "jobTitle": "Creador de contenido",
+    "sameAs": [
+      "https://www.tiktok.com/@alfonsoisaac_",
+      "https://www.instagram.com/d3sc0n3ctad0011/"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0d0d0f;
+      --card: #17171b;
+      --text: #f5f5f7;
+      --muted: #b4b4bd;
+      --accent: #ffffff;
+      --border: #2b2b31;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,.06), transparent 28%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,.04), transparent 24%),
+        var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .wrap {
+      width: min(680px, 100%);
+    }
+
+    .card {
+      background: rgba(23, 23, 27, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 34px;
+      box-shadow: 0 24px 80px rgba(0,0,0,.35);
+      backdrop-filter: blur(12px);
+    }
+
+    .avatar {
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: linear-gradient(135deg, #2a2a30, #101014);
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 7vw, 3.2rem);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .handle {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .bio {
+      margin: 22px 0 28px;
+      color: #d8d8de;
+      font-size: 1.08rem;
+      line-height: 1.65;
+      max-width: 54ch;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      text-decoration: none;
+      background: #111114;
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+
+    .link:hover {
+      transform: translateY(-2px);
+      border-color: #4a4a52;
+      background: #1b1b20;
+    }
+
+    .link strong {
+      display: block;
+      font-size: 1rem;
+    }
+
+    .link span {
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .arrow {
+      font-size: 1.25rem;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      color: #777782;
+      font-size: .85rem;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 520px) {
+      .card { padding: 26px 20px; border-radius: 22px; }
+      .avatar { width: 78px; height: 78px; font-size: 26px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="avatar" aria-label="Iniciales de Alfonso Isaac">AI</div>
+
+      <h1>Alfonso Isaac</h1>
+      <div class="handle">@alfonsoisaac_ · Creador de contenido</div>
+
+      <p class="bio">
+        Bienvenido a mi página oficial. Aquí puedes encontrar mis redes sociales y seguir mi contenido.
+      </p>
+
+      <div class="links">
+        <a class="link" href="https://www.tiktok.com/@alfonsoisaac_" target="_blank" rel="noopener noreferrer">
+          <div>
+            <strong>TikTok</strong>
+            <span>@alfonsoisaac_</span>
+          </div>
+          <div class="arrow">↗</div>
+        </a>
+
+        <a class="link" href="https://www.instagram.com/d3sc0n3ctad0011/" target="_blank" rel="noopener noreferrer">
+          <div>
+            <strong>Instagram</strong>
+            <span>@d3sc0n3ctad0011</span>
+          </div>
+          <div class="arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Alfonso Isaac
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
